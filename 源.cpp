@@ -1,0 +1,105 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+/* 整数排序
+int main()
+{
+	int num,num1;
+	scanf("%d %d", &num, &num1);
+	if (num > num1) {
+		int temp = num;//temp:临时变量
+		num = num1;
+		num1 = temp;
+	}
+	printf("排序后为:%d %d\n", num, num1);
+
+	return 0;
+}
+*//* 取绝对值法1
+int main()
+{
+	int num;
+	scanf("%d", &num);
+	if (num > 0) {
+		printf("绝对值为:%d", num);
+	}
+	else {
+		printf("绝对值为:%d", num * -1);
+	}
+
+	return 0;
+}
+*//* 取绝对值法2
+int main()
+{
+	int num;
+	printf("请输入一个数: ");
+	scanf("%d", &num);
+	if (num < 0)
+	{
+		num = -num;
+	}
+	printf("这个数的绝对值为: %d", num);
+	return 0;
+}
+*//* 周薪水
+int main()
+{
+	int timer;//周工作时间
+	float Wmoney;//周薪水
+	const int WDATE = 40;//每周标准工作时间
+	const float MONEY = 8.25;//每小时工资
+	scanf("%d", &timer);
+	if (timer > WDATE) {
+		Wmoney = WDATE * MONEY + (timer - WDATE) * MONEY *1.5;
+	}
+	else {
+		Wmoney = timer * MONEY;
+	}
+	printf("周薪水为:%.2f\n", Wmoney);
+
+	return 0;
+}
+*//* 交警抓车
+int main()
+{
+	int S;
+	printf("请输入汽车的速度:");
+	scanf("%d", &S);
+	if (S > 60) {
+		printf("%d您已超速",S);
+	}
+	else {
+		printf("%d速度正常",S);
+	}
+
+	return 0;
+}
+*//*
+int main()
+{
+	int num, num1, num2=0 ;
+	printf("请输入要比大小的三个整数:");
+	scanf("%d %d %d", &num, &num1, &num);
+	int max = 0;
+
+	if (num > num1){
+		if (num > num2){
+			max = num;
+		}
+		else {
+			max = num2;
+		}
+	}
+	else{
+		if (num1 > num2) {
+			max = num1;
+		}
+		else {
+			max=num2;
+		}
+	}
+	printf("max=%d\n", max);
+
+	return 0;
+}
+*/
