@@ -1,53 +1,53 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-/* ÕûÊıÅÅĞò
+/* æ•´æ•°æ’åº
 int main()
 {
 	int num,num1;
 	scanf("%d %d", &num, &num1);
 	if (num > num1) {
-		int temp = num;//temp:ÁÙÊ±±äÁ¿
+		int temp = num;//temp:ä¸´æ—¶å˜é‡
 		num = num1;
 		num1 = temp;
 	}
-	printf("ÅÅĞòºóÎª:%d %d\n", num, num1);
+	printf("æ’åºåä¸º:%d %d\n", num, num1);
 
 	return 0;
 }
-*//* È¡¾ø¶ÔÖµ·¨1
+*//* å–ç»å¯¹å€¼æ³•1
 int main()
 {
 	int num;
 	scanf("%d", &num);
 	if (num > 0) {
-		printf("¾ø¶ÔÖµÎª:%d", num);
+		printf("ç»å¯¹å€¼ä¸º:%d", num);
 	}
 	else {
-		printf("¾ø¶ÔÖµÎª:%d", num * -1);
+		printf("ç»å¯¹å€¼ä¸º:%d", num * -1);
 	}
 
 	return 0;
 }
-*//* È¡¾ø¶ÔÖµ·¨2
+*//* å–ç»å¯¹å€¼æ³•2
 int main()
 {
 	int num;
-	printf("ÇëÊäÈëÒ»¸öÊı: ");
+	printf("è¯·è¾“å…¥ä¸€ä¸ªæ•°: ");
 	scanf("%d", &num);
 	if (num < 0)
 	{
 		num = -num;
 	}
-	printf("Õâ¸öÊıµÄ¾ø¶ÔÖµÎª: %d", num);
+	printf("è¿™ä¸ªæ•°çš„ç»å¯¹å€¼ä¸º: %d", num);
 	return 0;
 }
-*//* ÖÜĞ½Ë®
+*//* å‘¨è–ªæ°´
 int main()
 {
-	int timer;//ÖÜ¹¤×÷Ê±¼ä
-	float Wmoney;//ÖÜĞ½Ë®
-	const int WDATE = 40;//Ã¿ÖÜ±ê×¼¹¤×÷Ê±¼ä
-	const float MONEY = 8.25;//Ã¿Ğ¡Ê±¹¤×Ê
+	int timer;//å‘¨å·¥ä½œæ—¶é—´
+	float Wmoney;//å‘¨è–ªæ°´
+	const int WDATE = 40;//æ¯å‘¨æ ‡å‡†å·¥ä½œæ—¶é—´
+	const float MONEY = 8.25;//æ¯å°æ—¶å·¥èµ„
 	scanf("%d", &timer);
 	if (timer > WDATE) {
 		Wmoney = WDATE * MONEY + (timer - WDATE) * MONEY *1.5;
@@ -55,21 +55,21 @@ int main()
 	else {
 		Wmoney = timer * MONEY;
 	}
-	printf("ÖÜĞ½Ë®Îª:%.2f\n", Wmoney);
+	printf("å‘¨è–ªæ°´ä¸º:%.2f\n", Wmoney);
 
 	return 0;
 }
-*//* ½»¾¯×¥³µ
+*//* äº¤è­¦æŠ“è½¦
 int main()
 {
 	int S;
-	printf("ÇëÊäÈëÆû³µµÄËÙ¶È:");
+	printf("è¯·è¾“å…¥æ±½è½¦çš„é€Ÿåº¦:");
 	scanf("%d", &S);
 	if (S > 60) {
-		printf("%dÄúÒÑ³¬ËÙ",S);
+		printf("%dæ‚¨å·²è¶…é€Ÿ",S);
 	}
 	else {
-		printf("%dËÙ¶ÈÕı³£",S);
+		printf("%dé€Ÿåº¦æ­£å¸¸",S);
 	}
 
 	return 0;
@@ -78,7 +78,7 @@ int main()
 int main()
 {
 	int num, num1, num2=0 ;
-	printf("ÇëÊäÈëÒª±È´óĞ¡µÄÈı¸öÕûÊı:");
+	printf("è¯·è¾“å…¥è¦æ¯”å¤§å°çš„ä¸‰ä¸ªæ•´æ•°:");
 	scanf("%d %d %d", &num, &num1, &num);
 	int max = 0;
 
