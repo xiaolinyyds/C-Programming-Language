@@ -1,68 +1,68 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
-/* »áÔ±µÈ¼¶
+/* ä¼šå‘˜ç­‰çº§
 int main()
 {
 	int credit;
-	printf("ÊäÈëÄúµÄ»ı·Ö£º");
+	printf("è¾“å…¥æ‚¨çš„ç§¯åˆ†ï¼š");
 	scanf("%d", &credit);
 
 	if (credit <= 1000)
 	{
-		printf("×ğ¾´µÄ¿Í»§£¬ÄúÊÇÆÕÍ¨»áÔ±!\n");
+		printf("å°Šæ•¬çš„å®¢æˆ·ï¼Œæ‚¨æ˜¯æ™®é€šä¼šå‘˜!\n");
 	}
 	else
 	{
 		if (credit <= 5000)
 		{
-			printf("×ğ¾´µÄ¿Í»§£¬ÄúÊÇÒø¿¨»áÔ±!\n");
+			printf("å°Šæ•¬çš„å®¢æˆ·ï¼Œæ‚¨æ˜¯é“¶å¡ä¼šå‘˜!\n");
 		}
 		else
 		{
 			if (credit <= 10000)
 			{
-				printf("×ğ¾´µÄ¿Í»§£¬ÄúÊÇ½ğ¿¨»áÔ±!\n");
+				printf("å°Šæ•¬çš„å®¢æˆ·ï¼Œæ‚¨æ˜¯é‡‘å¡ä¼šå‘˜!\n");
 			}
 			else
 			{
-				printf("×ğ¾´µÄ¿Í»§£¬ÄúÊÇ¹ó±ö¿¨»áÔ±!\n");
+				printf("å°Šæ•¬çš„å®¢æˆ·ï¼Œæ‚¨æ˜¯è´µå®¾å¡ä¼šå‘˜!\n");
 			}
 		}
 	}
 
 	return 0;
 }
-*//* ÅĞ¶ÏÎ»Êı
+*//* åˆ¤æ–­ä½æ•°
 int main()
 {
 	int num;
-	printf("ÇëÊäÈëÒ»¸öÕıÕûÊı£º");
+	printf("è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°ï¼š");
 	scanf("%d", &num);
 
 	if (num < 10)
 	{
-		printf("%dÊÇ1Î»Êı", num);
+		printf("%dæ˜¯1ä½æ•°", num);
 	}
 	else
 	{
 		if (num < 100)
 		{
-			printf("%dÊÇ2Î»Êı", num);
+			printf("%dæ˜¯2ä½æ•°", num);
 		}
 		else
 		{
-			printf("%dÊÇ3Î»Êı", num);
+			printf("%dæ˜¯3ä½æ•°", num);
 		}
 	}
 	return 0;
 }
-*//* ÈòÆ½ÄêÅĞ¶Ï
+*//* é—°å¹³å¹´åˆ¤æ–­
 int main()
 {
 	int year, month;
-	printf("ÇëÊäÈëÄê·İ£º");
+	printf("è¯·è¾“å…¥å¹´ä»½ï¼š");
 	scanf("%d", &year);
-	printf("ÇëÊäÈëÔÂ·İ£º");
+	printf("è¯·è¾“å…¥æœˆä»½ï¼š");
 	scanf("%d", &month);
 	switch (month)
 	{
@@ -72,25 +72,25 @@ int main()
 	 case 7:
 	 case 8:
 	 case 10:
-	 case 12:printf("¸ÃÔÂÎª31Ìì\n"); break;
+	 case 12:printf("è¯¥æœˆä¸º31å¤©\n"); break;
 	 case 4:
 	 case 6:
 	 case 9:
-	 case 11:printf("¸ÃÔÂÎª31Ìì\n"); break;
+	 case 11:printf("è¯¥æœˆä¸º31å¤©\n"); break;
 	 case 2:if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
-		       printf("¸ÃÔÂÎª29Ìì,ÇÒ¸ÃÄêÎªÈòÄê\n");
+		       printf("è¯¥æœˆä¸º29å¤©,ä¸”è¯¥å¹´ä¸ºé—°å¹´\n");
 		    else
-		       printf("¸ÃÔÂÎª28Ìì£¬ÇÒ¸ÃÄêÎªÆ½Äê\n");
+		       printf("è¯¥æœˆä¸º28å¤©ï¼Œä¸”è¯¥å¹´ä¸ºå¹³å¹´\n");
 		    break;
 	}
 	return 0;
 }
-*//* ³É¼¨µÈ¼¶ÅĞ¶Ï
+*//* æˆç»©ç­‰çº§åˆ¤æ–­
 int main()
 {
-	int score; //³É¼¨
-	char grade; //³É¼¨µÈ¼¶
-	printf("ÇëÊäÈëÄãµÄ³É¼¨£º");
+	int score; //æˆç»©
+	char grade; //æˆç»©ç­‰çº§
+	printf("è¯·è¾“å…¥ä½ çš„æˆç»©ï¼š");
 	scanf("%d", &score);
 
 	switch (score/10)
@@ -107,7 +107,7 @@ int main()
 	  case 9:
 	  case 10:grade = 'A'; break;
 	}
-	printf("ÄãµÄ³É¼¨µÈ¼¶ÊÇ£º%c\n", grade);
+	printf("ä½ çš„æˆç»©ç­‰çº§æ˜¯ï¼š%c\n", grade);
 	return 0;
 }
 */
