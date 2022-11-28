@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+/* 办公室采购
+int main()
+{
+	int numPen;
+	int numUdisk;
+	const int STAFF = 70;
+	int totalPen, totalUdisk;
+
+	printf("请输入发放给每位员工的圆珠笔数量：");
+	scanf("%d", &numPen);
+	printf("请输入发放给每位员工的U盘数量：");
+	scanf("%d", &numUdisk);
+	totalPen = STAFF * numPen;
+	totalUdisk = STAFF * numUdisk;
+	printf("一共需要采购%d支圆珠笔，%d个U盘\n", totalPen, totalUdisk);
+	
+	return 0;
+}*//* 商店找零
+int main()
+{
+	int a, b, c;
+	printf("请输入金额：");
+	scanf("%d", &a);
+	printf("给销售员的钱为：");
+	scanf("%d", &b);
+	c = b - a;
+	printf("应找零：%d", c);
+
+	return 0;
+}
+*/
