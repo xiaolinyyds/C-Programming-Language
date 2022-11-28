@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-/* °ì¹«ÊÒ²É¹º
+/* åŠå…¬å®¤é‡‡è´­
 int main()
 {
 	int numPen;
@@ -8,25 +8,25 @@ int main()
 	const int STAFF = 70;
 	int totalPen, totalUdisk;
 
-	printf("ÇëÊäÈë·¢·Å¸øÃ¿Î»Ô±¹¤µÄÔ²Öé±ÊÊıÁ¿£º");
+	printf("è¯·è¾“å…¥å‘æ”¾ç»™æ¯ä½å‘˜å·¥çš„åœ†ç ç¬”æ•°é‡ï¼š");
 	scanf("%d", &numPen);
-	printf("ÇëÊäÈë·¢·Å¸øÃ¿Î»Ô±¹¤µÄUÅÌÊıÁ¿£º");
+	printf("è¯·è¾“å…¥å‘æ”¾ç»™æ¯ä½å‘˜å·¥çš„Uç›˜æ•°é‡ï¼š");
 	scanf("%d", &numUdisk);
 	totalPen = STAFF * numPen;
 	totalUdisk = STAFF * numUdisk;
-	printf("Ò»¹²ĞèÒª²É¹º%dÖ§Ô²Öé±Ê£¬%d¸öUÅÌ\n", totalPen, totalUdisk);
+	printf("ä¸€å…±éœ€è¦é‡‡è´­%dæ”¯åœ†ç ç¬”ï¼Œ%dä¸ªUç›˜\n", totalPen, totalUdisk);
 	
 	return 0;
-}*//* ÉÌµêÕÒÁã
+}*//* å•†åº—æ‰¾é›¶
 int main()
 {
 	int a, b, c;
-	printf("ÇëÊäÈë½ğ¶î£º");
+	printf("è¯·è¾“å…¥é‡‘é¢ï¼š");
 	scanf("%d", &a);
-	printf("¸øÏúÊÛÔ±µÄÇ®Îª£º");
+	printf("ç»™é”€å”®å‘˜çš„é’±ä¸ºï¼š");
 	scanf("%d", &b);
 	c = b - a;
-	printf("Ó¦ÕÒÁã£º%d", c);
+	printf("åº”æ‰¾é›¶ï¼š%d", c);
 
 	return 0;
 }
