@@ -1,27 +1,27 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-/* »áÔ±ĞÅÏ¢ÊäÈëÊä³ö
+/* ä¼šå‘˜ä¿¡æ¯è¾“å…¥è¾“å‡º
 int main()
 {
 	int id, age;
 	char sex;
 
-	printf("ÇëÊäÈë»áÔ±µÄ»ù±¾ĞÅÏ¢£º\n");
-	printf("ÊäÈë»áÔ±±àºÅ£º");
+	printf("è¯·è¾“å…¥ä¼šå‘˜çš„åŸºæœ¬ä¿¡æ¯ï¼š\n");
+	printf("è¾“å…¥ä¼šå‘˜ç¼–å·ï¼š");
 	scanf("%d", &id);
 	getchar();
-	printf("ÇëÊäÈë»áÔ±µÄĞÔ±ğ(M:ÄĞ,F:Å®)£º");
+	printf("è¯·è¾“å…¥ä¼šå‘˜çš„æ€§åˆ«(M:ç”·,F:å¥³)ï¼š");
 	sex = getchar();
-	printf("ÇëÊäÈë»áÔ±ÄêÁä£º");
+	printf("è¯·è¾“å…¥ä¼šå‘˜å¹´é¾„ï¼š");
 	scanf("%d", &age);
 
-	printf("\n»áÔ±µÄ»ù±¾ĞÅÏ¢ÈçÏÂ£º\n");
+	printf("\nä¼šå‘˜çš„åŸºæœ¬ä¿¡æ¯å¦‚ä¸‹ï¼š\n");
 	printf("ID\tSex\tAge\n");
 	printf("%d\t%c\t%d\n",id,sex,age);
 	
 	return 0;
 }
-*//* ACSIIÖµ
+*//* ACSIIå€¼
 int main()
 {
 	char ch;
