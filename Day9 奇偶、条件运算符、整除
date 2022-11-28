@@ -1,22 +1,22 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-/* ÅĞ¶ÏÆæÅ¼
+/* åˆ¤æ–­å¥‡å¶
 int main()
 {
 	int m;
 	scanf("%d", &m);
 	if (m % 2 == 0)
 	{
-		printf("%d is Å¼Êı\n", m);
+		printf("%d is å¶æ•°\n", m);
 	}
 	else
 	{
-		printf("%d is ÆæÊı\n", m);
+		printf("%d is å¥‡æ•°\n", m);
 	}
 
 	return 0;
 }
-*//* Ìõ¼şÔËËã·û±È´óĞ¡
+*//* æ¡ä»¶è¿ç®—ç¬¦æ¯”å¤§å°
 int main()
 {
 	int a, b;
@@ -25,52 +25,52 @@ int main()
 	printf("max=%d\n", a > b ? a : b);
 	return 0;
 }
-*//* 3¡¢5Õû³ı·¨1
+*//* 3ã€5æ•´é™¤æ³•1
 int main()
 {
 	int num;
-	printf("ÇëÊäÈëÒ»¸öÕûÊı£º");
+	printf("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");
 	scanf("%d", &num);
 	if (num % 3 == 0)
 	{
 		if (num % 5 == 0) {
-			printf("%dÄÜ±»3ºÍ5Õû³ı\n", num);
+			printf("%dèƒ½è¢«3å’Œ5æ•´é™¤\n", num);
 		}
 		else {
-			printf("%d²»ÄÜ±»3ºÍ5Í¬Ê±Õû³ı\n", num);
+			printf("%dä¸èƒ½è¢«3å’Œ5åŒæ—¶æ•´é™¤\n", num);
 		}
 	}
 	else {
-		printf("%d²»ÄÜ±»3ºÍ5Õû³ı\n", num);
+		printf("%dä¸èƒ½è¢«3å’Œ5æ•´é™¤\n", num);
 	}
 	return 0;
 }
-*//* 3¡¢5Õû³ı·¨2
+*//* 3ã€5æ•´é™¤æ³•2
 int main()
 {
 	int num;
-	printf("ÇëÊäÈëÒ»¸öÕûÊı£º");
+	printf("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼š");
 	scanf("%d", &num);
 	if (num % 3 == 0 && num % 5 == 0)
 	{
-		printf("%dÄÜ±»3ºÍ5Í¬Ê±Õû³ı\n",num);
+		printf("%dèƒ½è¢«3å’Œ5åŒæ—¶æ•´é™¤\n",num);
 	}
 	else
 	{
-		printf("%d²»ÄÜ±»3ºÍ5Õû³ı\n", num);
+		printf("%dä¸èƒ½è¢«3å’Œ5æ•´é™¤\n", num);
 	}
 	return 0;
 }
-*//* »áÔ±ÕÛ¿Û
+*//* ä¼šå‘˜æŠ˜æ‰£
 int main()
 {
 	char isMember;
-	double prire, money; //¹ºÎï½ğ¶î¡¢Ó¦¸¶½ğ¶î
+	double prire, money; //è´­ç‰©é‡‘é¢ã€åº”ä»˜é‡‘é¢
 	const double ZK1 = 0.95, ZK2 = 0.98;
 
-	printf("¿Í»§ÊÇ·ñÎª»áÔ±(y|n): ");
+	printf("å®¢æˆ·æ˜¯å¦ä¸ºä¼šå‘˜(y|n): ");
 	scanf("%c", &isMember);
-	printf("ÇëÊäÈë±¾´Î¹ºÎï×Ü½ğ¶î£º");
+	printf("è¯·è¾“å…¥æœ¬æ¬¡è´­ç‰©æ€»é‡‘é¢ï¼š");
 	scanf("%lf", &prire);
 
 	if (isMember == 'y')
@@ -95,19 +95,19 @@ int main()
 			money = prire;
 		}
 	}
-	printf("Ó¦Ö§¸¶½ğ¶îÎª£º%.2f\n", money);
+	printf("åº”æ”¯ä»˜é‡‘é¢ä¸ºï¼š%.2f\n", money);
 
 	return 0;
 }
-*//* ¾°µãÆ±¼Û
+*//* æ™¯ç‚¹ç¥¨ä»·
 int main()
 {
 	int month, age, price, money;
-	printf("ÇëÊäÈëµ±Ç°ÔÂ·İ: ");
+	printf("è¯·è¾“å…¥å½“å‰æœˆä»½: ");
 	scanf("%d", &month);
-	printf("ÇëÊäÈëÄúµ±Ç°µÄÄêÁä: ");
+	printf("è¯·è¾“å…¥æ‚¨å½“å‰çš„å¹´é¾„: ");
 	scanf("%d", &age);
-	printf("ÇëÊäÈëµ±Ç°Æ±¼Û: ");
+	printf("è¯·è¾“å…¥å½“å‰ç¥¨ä»·: ");
 	scanf("%d", &price);
 	const double ZK1 = 0.5, ZK2 = 0.8;
 
@@ -134,7 +134,7 @@ int main()
 		}
 	}
 
-	printf("Ó¦Ö§¸¶½ğ¶îÎª£º%d\n", money);
+	printf("åº”æ”¯ä»˜é‡‘é¢ä¸ºï¼š%d\n", money);
 
 	return 0;
 }
