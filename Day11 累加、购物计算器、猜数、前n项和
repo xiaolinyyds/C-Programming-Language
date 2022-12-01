@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* 1¡ª100Ïà¼Ó while·¨
+/* 1â€”100ç›¸åŠ  whileæ³•
 int main()
 {
 	int i, sum = 0;
@@ -15,7 +15,7 @@ int main()
 	printf("%d\n", sum);
 	return 0;
 }
-*//* 1¡ª100Ïà¼Ó do...while·¨:ÖÁÉÙÖ´ĞĞÒ»´Î
+*//* 1â€”100ç›¸åŠ  do...whileæ³•:è‡³å°‘æ‰§è¡Œä¸€æ¬¡
 int main()
 {
 	int i, sum = 0;
@@ -27,7 +27,7 @@ int main()
 	printf("%d\n", sum);
 	return 0;
 }
-*//* 1¡ª100Ïà¼Ó for·¨
+*//* 1â€”100ç›¸åŠ  foræ³•
 int main()
 {
 	int i, sum = 0;
@@ -36,28 +36,28 @@ int main()
 	printf("%d\n", sum);
 	return 0;
 }
-*//* ¹ºÎï¼ÆËãÆ÷
+*//* è´­ç‰©è®¡ç®—å™¨
 int main()
 {
-	int grade, k = 1; // ÉÌÆ·ÊıÁ¿¡¢µÚÒ»ÖÖÉÌÆ·
-	int sum = 0; // ÉÌÆ·ÊıÁ¿
-	float money = 0.0; // ÉÌÆ·½ğ¶î
-	printf("±¾´Î¹ºÂòÁË¼¸ÖÖÉÌÆ·£º");
+	int grade, k = 1; // å•†å“æ•°é‡ã€ç¬¬ä¸€ç§å•†å“
+	int sum = 0; // å•†å“æ•°é‡
+	float money = 0.0; // å•†å“é‡‘é¢
+	printf("æœ¬æ¬¡è´­ä¹°äº†å‡ ç§å•†å“ï¼š");
 	scanf("%d", &grade);
 	while (grade > 0)
 	{
 		float price;
 		int num;
-		printf("ÊäÈëµÚ%dÖÖÉÌÆ·µÄµ¥¼Û£º", k);
+		printf("è¾“å…¥ç¬¬%dç§å•†å“çš„å•ä»·ï¼š", k);
 		scanf("%f", &price);
-		printf("ÊäÈëµÚ%dÖÖÉÌÆ·µÄ¹ºÂòÊıÁ¿£º", k);
+		printf("è¾“å…¥ç¬¬%dç§å•†å“çš„è´­ä¹°æ•°é‡ï¼š", k);
 		scanf("%d", &num);
 		sum += num;
 		money += price * num;
 		grade--;
 		k++;
 	}
-	printf("±¾´Î¹ºÂòÉÌÆ·µÄ×ÜÊıÁ¿£º%d\t×Ü¼Û:%.2f\n", sum, money);
+	printf("æœ¬æ¬¡è´­ä¹°å•†å“çš„æ€»æ•°é‡ï¼š%d\tæ€»ä»·:%.2f\n", sum, money);
 	return 0;
 }
 */
@@ -67,29 +67,29 @@ int main()
 	int number = rand() % 100 + 1;
 	int count = 0;
 	int a = 0;
-	printf("½ã½ãÒÑ¾­ÏëºÃÁËÒ»¸ö1µ½100µÄÊı£¬¿ìÀ´¸ú½ã½ãÒ»ÆğÍæ²ÂÊıÓÎÏ·°É£¡\n");
+	printf("å§å§å·²ç»æƒ³å¥½äº†ä¸€ä¸ª1åˆ°100çš„æ•°ï¼Œå¿«æ¥è·Ÿå§å§ä¸€èµ·ç©çŒœæ•°æ¸¸æˆå§ï¼\n");
 	do {
-		printf("Çë²ÂÒ»¸ö1µ½100µÄÊıÅ¶£¬±¦±´£º");
+		printf("è¯·çŒœä¸€ä¸ª1åˆ°100çš„æ•°å“¦ï¼Œå®è´ï¼š");
 		scanf("%d", &a);
 		count++;
 		if (a > number) {
-			printf("ÄãµÄÊı²Â´óÁË£¬±¦±´¡£");
+			printf("ä½ çš„æ•°çŒœå¤§äº†ï¼Œå®è´ã€‚");
 		}
 		else {
 			if (a < number) {
-				printf("Äã²ÂµÄÊıĞ¡ÁË£¬±¦±´¡£");
+				printf("ä½ çŒœçš„æ•°å°äº†ï¼Œå®è´ã€‚");
 			}
 		}
 	} while (a != number);
-	printf("Ì«ºÃÁË£¬ÄãÓÃÁË%d´Î¾Í²Âµ½ÁË´ğ°¸£¬ÄãÕæÀ÷º¦£¬½ã½ã°®ËÀÄãÁË\n", count);
+	printf("å¤ªå¥½äº†ï¼Œä½ ç”¨äº†%dæ¬¡å°±çŒœåˆ°äº†ç­”æ¡ˆï¼Œä½ çœŸå‰å®³ï¼Œå§å§çˆ±æ­»ä½ äº†\n", count);
 	return 0;
 }
-/* ÇóÇ°nÏîºÍ
+/* æ±‚å‰né¡¹å’Œ
 int main()
 {
-	double a = 1, b = 2, sum=0; // aÊÇ·Ö×Ó£¬bÊÇ·ÖÄ¸
+	double a = 1, b = 2, sum=0; // aæ˜¯åˆ†å­ï¼Œbæ˜¯åˆ†æ¯
 	int num;
-	printf("ÄãÏëÇóÇ°¼¸ÏîºÍ£º");
+	printf("ä½ æƒ³æ±‚å‰å‡ é¡¹å’Œï¼š");
 	scanf("%d", &num);
 	while (num)
 	{
