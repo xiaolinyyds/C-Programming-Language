@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-/* ËØÊıÅĞ¶Ï
+/* ç´ æ•°åˆ¤æ–­
 int main()
 {
 	int n;
@@ -17,16 +17,16 @@ int main()
 	}
 	if (isPrime == 1)
 	{
-		printf("%dÊÇËØÊı\n", n);
+		printf("%dæ˜¯ç´ æ•°\n", n);
 	}
 	else
 	{
-		printf("%d²»ÊÇËØÊı\n", n);
+		printf("%dä¸æ˜¯ç´ æ•°\n", n);
 	}
 
 	return 0;
 }
-*//* ³Ë·¨¿Ú¾÷
+*//* ä¹˜æ³•å£è¯€
 int main()
 {
 	int i, j;
@@ -40,7 +40,7 @@ int main()
 	}
 	return 0;
 }
-*//* °Ù¼¦°ÙÇ®
+*//* ç™¾é¸¡ç™¾é’±
 int main()
 {
 	int cock, hen, chiken;
@@ -48,7 +48,7 @@ int main()
 	{
 		for (hen = 0; hen <= 33; hen++)
 		{
-			for (chiken = 0; chiken <= 100; chiken++) // ¸ÄÎªchiken = 100 - cock - hen;ÔËĞĞ¸ü¿ì
+			for (chiken = 0; chiken <= 100; chiken++) // æ”¹ä¸ºchiken = 100 - cock - hen;è¿è¡Œæ›´å¿«
 			{
 				if ((5 * cock + 3 * hen + chiken / 3.0 == 100) && (cock + hen + chiken == 100))
 					printf("cock=%2d,hen=%2d,chiken=%2d\n", cock, hen, chiken);
@@ -57,7 +57,7 @@ int main()
 	}
 	return 0;
 }
-*//* ´ÕÓ²±Ò(¶à½á¹û¡¢gotoÓï¾ä)
+*//* å‡‘ç¡¬å¸(å¤šç»“æœã€gotoè¯­å¥)
 int main()
 {
 	int one, two, five;
@@ -71,14 +71,14 @@ int main()
 			{
 				if (one + two * 2 + five * 5 == x * 10)
 				{
-					printf("¿ÉÒÔÓÃ%d¸ö1½Ç¼Ó%d¸ö2½Ç¼Ó%d¸ö5½ÇµÃµ½%dÔª\n", one, two, five,x); // ¼Ógoto out; Ö»Êä³öÒ»ÖÖ½á¹û
+					printf("å¯ä»¥ç”¨%dä¸ª1è§’åŠ %dä¸ª2è§’åŠ %dä¸ª5è§’å¾—åˆ°%då…ƒ\n", one, two, five,x); // åŠ goto out; åªè¾“å‡ºä¸€ç§ç»“æœ
 				}
 			}
 		}
 	}
-	return 0; // ¼Óout:
+	return 0; // åŠ out:
 }
-*//* ´ÕÓ²±Ò(breakÓï¾ä)
+*//* å‡‘ç¡¬å¸(breakè¯­å¥)
 int main()
 {
 	int one, two, five;
@@ -92,7 +92,7 @@ int main()
 			{
 				if (one + two * 2 + five * 5 == x * 10)
 				{
-					printf("¿ÉÒÔÓÃ%d¸ö1½Ç¼Ó%d¸ö2½Ç¼Ó%d¸ö5½ÇµÃµ½%dÔª\n", one, two, five, x);
+					printf("å¯ä»¥ç”¨%dä¸ª1è§’åŠ %dä¸ª2è§’åŠ %dä¸ª5è§’å¾—åˆ°%då…ƒ\n", one, two, five, x);
 					exit = 1;
 					break;
 				}
